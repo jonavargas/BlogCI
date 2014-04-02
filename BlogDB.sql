@@ -35,8 +35,7 @@ CREATE TABLE IF NOT EXISTS `users` (
 -- Volcado de datos para la tabla `users`
 --
 
-INSERT INTO `users` (`user`, `pass`) VALUES
-('admin', '21232f297a57a5a743894a0e4a801fc3');
+INSERT INTO `users` (`user`, `pass`) VALUES('admin',MD5('admin'));
 
 /*!40101 SET CHARACTER_SET_CLIENT=@OLD_CHARACTER_SET_CLIENT */;
 /*!40101 SET CHARACTER_SET_RESULTS=@OLD_CHARACTER_SET_RESULTS */;
