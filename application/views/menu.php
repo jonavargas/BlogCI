@@ -2,10 +2,12 @@
 
 <?php 
 	if ($this->session->userdata('is_logged_in'))
-		echo 'Hello, '.$this->session->userdata('name').' ('. anchor(base_url()."users/logout/", "logout") .') | ';
+		echo 'Hello, '.$this->session->userdata('name').' ('. anchor(base_url()."user/logout/", "logout") .') | ';
 	else
-		echo anchor(base_url().'users/signin/','Login').' | ';
-	echo anchor(base_url().'home/post/', 'New Post');
+		echo anchor(base_url().'user/login/','Login').' | ';
+	echo anchor(base_url().'post/newPost/', 'New Post');
 	echo ' | ';
 	echo anchor(base_url(), 'Home');
+	echo ' | ';
+	echo anchor(base_url().'comments/disable/', 'Disable Comments');	
 ?>

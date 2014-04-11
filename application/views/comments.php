@@ -12,12 +12,12 @@
 	Author: <?=$post->creator?><br />
 	Posted: <?=convertDateTimetoTimeAgo($post->date)?><br />
 		
-	<?=form_open(base_url().'home/comment/')?>
+	<?=form_open(base_url().'comments/comment/')?>
 	<br />Author: <?=form_input('creator')?><br />
 	<br />
 	Your comment: 
 	
-	<?=form_hidden('id_blog', $this->uri->segment(3))?>
+	<?=form_hidden('id_post', $this->uri->segment(3))?>
 	<?=form_textarea('comment')?>
 	<?=form_submit('submit','Add Comment')?>
 	<?=form_close()?>

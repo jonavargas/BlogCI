@@ -7,7 +7,7 @@
 <body>
 	<?php include('menu.php');?>
 
-	<?=form_open(base_url().'home/insertPost/')?>
+	<?=form_open(base_url().'post/insertPost/')?>
 	<p>Title: <?=form_input('title')?></p>
 	<p>Content: <?=form_textarea('content')?></p>
 	<?=form_submit('submit', 'Create Post')?>

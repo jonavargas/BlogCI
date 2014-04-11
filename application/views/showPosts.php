@@ -9,7 +9,7 @@
 
 	<?php if (!empty($posts)) : ?>
 		<?php foreach($posts as $post) : ?>
-			<h2><?=anchor(base_url().'home/view/'.$post->id,$post->title)?></h2>
+			<h2><?=anchor(base_url().'post/viewPost/'.$post->id,$post->title)?></h2>
 			Author: <?=$post->creator?><br />
 			Date: <?=convertDateTimetoTimeAgo($post->date)?>
 		<?php endforeach; ?>

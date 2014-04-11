@@ -1,21 +1,21 @@
 <?php if ( ! defined('BASEPATH')) exit('No direct script access allowed');
 
-class Users extends CI_Controller{
+class User extends CI_Controller{
 
 	public function __construct(){
 		parent::__construct();
-		$this->load->model('blog_model'); 
+		$this->load->model('user_model'); 
 	}
 
-	public function signin(){
+	public function login(){
 		$this->load->view('login');
 	}
 
-	public function validateLogin(){		
+	public function validate(){		
 		$username = $this->input->post('username');
 		$password = md5($this->input->post('password'));
 
-		if($user = $this->blog_model->validate_credentials($username, $password)){
+		if($user = $this->user_model->validate($username, $password)){
 			$session = array(
 				'username' => $username,
 				'is_logged_in' => TRUE,				
