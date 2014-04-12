@@ -12,7 +12,7 @@
 	Author: <?=$post->creator?><br />
 	Posted: <?=$post->date?><br />
 		
-	<?=form_open(base_url().'comments/comment/')?>
+	<?=form_open(base_url().'comments/comment/')?>	
 	<br />Author: <?=form_input('creator')?><br />
 	<br />
 	Your comment: 
@@ -25,8 +25,8 @@
 	<?php
 		if(!empty($comments)){
 			echo '<h3>Comments</h3>';
-			foreach($comments as $comment)        	///////////// hacer un if aqui y validar que el comentario no este deshabilitado
-				if($comment->status == 'enable'){			/// if validar estado comments
+			foreach($comments as $comment)        	
+				if($comment->status == 'enable'){			
 					echo '<hr /> <h4> Author: '.$comment->creator.'</h4>'.
 					$comment->comment.'<br />'.
 					'<br />'.$comment->date .'<hr />';

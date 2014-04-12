@@ -16,10 +16,24 @@ class Comments extends CI_Controller {
 			'status' => ('disable'),	
 			'comment' => $this->input->post('comment'),
 			'date' => date('Y-m-d h:i:s')
-			);
+			);		
+		
+		$this->load->library('email', '','email');
+		$this->email->from('jvargasa91@gmail.com', 'Jonathan Blog');
+		$this->email->to('jonavargas2012@gmail.com');
+		$this->email->subject('New comment added!');
+		$this->email->message('<h4>It added a new comment new comment:</h4>' .
+	    '<strong>Author: </strong>'. $comment[creator] .'<br />'. '<br />'.'<br />'.
+		'<strong>Comment: </strong>' . $comment[comment] .'<br />'.'<br />'.
+		'<strong>Date: </strong>'.$comment[date] . '<hr />');
+
+		if($this->email->send()){
+		}
+		else{
+			show_error($this->email->print_debugger());
+		}
 
 		$this->comments_model->insert('comments', $comment);
-
 		redirect(base_url() . 'post/viewPost/' . $id_post);
 	}
 
