@@ -3,7 +3,7 @@
 -- http://www.phpmyadmin.net
 --
 -- Servidor: 127.0.0.1
--- Tiempo de generación: 09-04-2014 a las 08:03:09
+-- Tiempo de generación: 11-04-2014 a las 22:17:40
 -- Versión del servidor: 5.6.14
 -- Versión de PHP: 5.5.6
 
@@ -28,15 +28,14 @@ SET time_zone = "+00:00";
 
 CREATE TABLE IF NOT EXISTS `comments` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `id_blog` int(11) NOT NULL,
+  `id_post` int(11) NOT NULL,
   `creator` varchar(50) NOT NULL,
   `status` varchar(50) NOT NULL,
   `comment` text NOT NULL,
   `date` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=4 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=24 ;
 
--- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `post`
@@ -44,15 +43,14 @@ CREATE TABLE IF NOT EXISTS `comments` (
 
 CREATE TABLE IF NOT EXISTS `post` (
   `id` int(11) NOT NULL AUTO_INCREMENT,
-  `blogLink` varchar(100) NOT NULL,
+  `postLink` varchar(100) NOT NULL,
   `creator` varchar(50) NOT NULL,
   `title` varchar(100) NOT NULL,
   `content` text NOT NULL,
   `date` datetime NOT NULL,
   PRIMARY KEY (`id`)
-) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=10 ;
+) ENGINE=InnoDB  DEFAULT CHARSET=latin1 AUTO_INCREMENT=21 ;
 
--- --------------------------------------------------------
 
 --
 -- Estructura de tabla para la tabla `users`

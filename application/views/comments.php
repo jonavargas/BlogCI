@@ -10,7 +10,7 @@
 	<h2><?=$post->title?></h2>
 	<p><?=$post->content?></p>
 	Author: <?=$post->creator?><br />
-	Posted: <?=convertDateTimetoTimeAgo($post->date)?><br />
+	Posted: <?=$post->date?><br />
 		
 	<?=form_open(base_url().'comments/comment/')?>
 	<br />Author: <?=form_input('creator')?><br />

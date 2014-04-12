@@ -30,7 +30,7 @@ if ( ! function_exists('convertDateTimetoTimeAgo')){
 		$time = str_replace(":", "", substr($datetime, 11, 5));
 
 		//Fecha estilo TimeAgo
-		return "<script>document.write(moment('$date$time', 'YYYYMMDDHHmm').fromNow());</script>";		
+		return "<script>document.write(moment('$date$time', 'YYYYMMDDhhmm').fromNow());</script>";		
 
 	}
 }

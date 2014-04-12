@@ -23,7 +23,7 @@ class Post extends CI_Controller {
 			'creator' => $this->session->userdata('username'),
 			'title' => $this->input->post('title'),
 			'content' => $this->input->post('content'),
-			'date' => date('Y-m-d H:i:s')
+			'date' => date('Y-m-d h:i:s')
 			);		
 		$this->post_model->insert('post', $post);
 

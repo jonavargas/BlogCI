@@ -11,7 +11,7 @@
 		<?php foreach($posts as $post) : ?>
 			<h2><?=anchor(base_url().'post/viewPost/'.$post->id,$post->title)?></h2>
 			Author: <?=$post->creator?><br />
-			Date: <?=convertDateTimetoTimeAgo($post->date)?>
+			Date: <?=$post->date?>
 		<?php endforeach; ?>
 	<?php else : ?>
 		<h1>No Post</h1>
