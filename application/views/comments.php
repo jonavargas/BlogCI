@@ -6,13 +6,13 @@
 </head>
 <body>
 	<?php include('menu.php');?>
-	
+
 	<h2><?=$post->title?></h2>
 	<p><?=$post->content?></p>
 	Author: <?=$post->creator?><br />
 	Posted: <?=$post->date?><br />
 		
-	<?=form_open(base_url().'comments/comment/')?>	
+	<?=form_open(base_url().'comments/comment/')?>
 	<br />Author: <?=form_input('creator')?><br />
 	<br />
 	Your comment: 
@@ -29,12 +29,11 @@
 				if($comment->status == 'enable'){			
 					echo '<hr /> <h4> Author: '.$comment->creator.'</h4>'.
 					$comment->comment.'<br />'.
-					'<br />'.$comment->date .'<hr />';
-				}							
+					'<br />'.$comment->date . '<hr />';
+				}
 		}
 		else
 			echo '<h3>No Comments!</h3>';
 	?>
-	
 </body>
 </html>

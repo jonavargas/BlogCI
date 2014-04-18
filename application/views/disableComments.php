@@ -7,14 +7,11 @@
 	<?php include('menu.php');?>
 	<?=form_open(base_url().'comments/disable/')?>
 
-
-
-
 	<?php
 		if(!empty($comments)){
 			echo '<h3>Comments</h3>';
-			foreach ($comments as $key => $comment)        	///////////// hacer un if aqui y validar que el comentario no este deshabilitado
-				if($comment['status'] == 'disable'){			/// if validar estado comments
+			foreach ($comments as $key => $comment)        
+				if($comment['status'] == 'disable'){			
 					echo '<hr /> <h4> Author: '.$comment['creator'].'</h4>'.
 					$comment['comment'].'<br />'.
 					$comment['id_post'].'<br />'.
@@ -28,13 +25,9 @@
 				}					
 		}
 		else
-			echo '<h3>No Comments!</h3>';
-									
+			echo '<h3>No Comments!</h3>';				
 	
 	?>
-
-
-
 	
 </body>
 </html>

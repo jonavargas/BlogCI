@@ -6,16 +6,18 @@ class Comments_model extends CI_Model {
 		return $this->db->insert($table, $data);
 	}
 	
+	//Se optinen los comentarios que sean pertenecientes al id del post elegido.
 	public function getComments($id){
 		$this->db->where('id_post', $id);
 		return $this->db->get('comments')->result();
 	}
 
+	//Se obtienen los comentarios deshabilitados, y son ordenados por fecha en orden desendente.
 	public function selectComments()
 	{	
-		$this->db->order_by("id_post","date", "desc"); // ordena los datos por id_post y se basa en la fecha mas antigua.
+		$this->db->order_by("id_post","date", "desc"); 
 		$query = $this->db->get('comments');
 		return $query->result_array();		
 	}
-
+	
 }	

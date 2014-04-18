@@ -11,8 +11,10 @@
 		echo anchor(base_url().'post/newPost/', 'New Post');		
 		echo ' | ';
 		echo anchor(base_url().'comments/disable/', 'Disable Comments');
+		echo ' | ';
+		echo anchor(base_url().'mantComments/maintenance', 'Maintenance Comments');
 		echo ' | <hr />';
-		}	
+	}	
 	elseif (!$this->session->userdata('is_logged_in')){
 		echo '<hr />';
 		echo ' | ';

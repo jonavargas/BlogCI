@@ -16,8 +16,8 @@ class Comments extends CI_Controller {
 			'status' => ('disable'),	
 			'comment' => $this->input->post('comment'),
 			'date' => date('Y-m-d h:i:s')
-			);		
-		
+		);		
+
 		$this->load->library('email', '','email');
 		$this->email->from('jvargasa91@gmail.com', 'Jonathan Blog');
 		$this->email->to('jonavargas2012@gmail.com');
@@ -38,7 +38,7 @@ class Comments extends CI_Controller {
 	}
 
 	public function disable(){		
-		$data['status'] = 'disable';
+		//$data['status'] = 'disable';
 		$data['comments'] = $this->comments_model->selectComments();
 		$this->load->view('disableComments', $data);
 	}	
