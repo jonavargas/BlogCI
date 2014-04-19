@@ -4,7 +4,7 @@ class Comments extends CI_Controller {
 
 	public function __construct(){
 		parent::__construct();
-		$this->load->model('comments_model');		
+		$this->load->model('comments_model');
 	}
 
 	public function comment(){				
@@ -36,11 +36,4 @@ class Comments extends CI_Controller {
 		$this->comments_model->insert('comments', $comment);
 		redirect(base_url() . 'post/viewPost/' . $id_post);
 	}
-
-	public function disable(){		
-		//$data['status'] = 'disable';
-		$data['comments'] = $this->comments_model->selectComments();
-		$this->load->view('disableComments', $data);
-	}	
-
 }

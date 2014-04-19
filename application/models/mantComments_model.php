@@ -6,11 +6,12 @@
 	}
  
 	function getData() {
-		$comments = $this->db->get('comments'); //obtenemos la tabla 'contacto'. db->get('nombre_tabla') equivale a SELECT * FROM nombre_tabla.
-		return $comments->result(); //devolvemos el resultado de lanzar la query.
+		$this->db->order_by("id_post","date", "desc"); 
+		$comments = $this->db->get('comments');
+		return $comments->result(); 
 	}
 
-	function obtenerContacto($id) {
+	function getMessage($id) {
 		$this->db->select('id, creator, status, comment');
 		$this->db->from('comments');
 		$this->db->where('id = ' . $id);
@@ -22,8 +23,15 @@
 		$this->db->set('creator', $data['creator']);
 		$this->db->set('status', $data['status']);
 		$this->db->set('comment', $data['comment']);
-		$this->db->where('id', $data['id']); // problema con el id!!!!!!!!!!!!!!!!
+		$this->db->where('id', $data['id']); 
 		$this->db->update('comments');
+	}
+
+	////////////////////////////////////
+	
+	function deleteComments ($id) {
+		$this->db->where('id', $id);
+		$this->db->delete('comments');
 	}
 
 }

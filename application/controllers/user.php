@@ -23,7 +23,6 @@ class User extends CI_Controller{
 			$this->session->set_userdata($session);
 
 			redirect(base_url());
-			//$this->load->view('newPost'); //////////////// crar vista admind!!!
 		}
 		else{
 			$this->load->view('login', array('error'=>TRUE));
