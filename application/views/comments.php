@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" type="text/css" href="assets/style.css">
 	<meta charset="utf-8">
 	<title><?=$post->title?></title>	
 </head>

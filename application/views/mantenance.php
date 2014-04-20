@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <html lang="en">
 <head>
+	<link rel="stylesheet" type="text/css" href=<?php echo base_url('assets/style.css'); ?>>
 	<meta charset="utf-8">	
 </head>
-<body>
+<body class='mant'>
 	<?php include('menu.php');?>
 
 	<?=form_open(base_url().'mantComments/getMessages/')?>

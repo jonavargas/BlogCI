@@ -1,22 +1,36 @@
 <script type="text/javascript" src="<?=base_url()?>js/moment.js"></script>
+<html>	
 
-<?php 
-	if ($this->session->userdata('is_logged_in')){
-		echo '<hr />';
-		echo ' | ';
-		echo anchor(base_url()."user/logout/", "Logout");
-		echo ' | ';
-		echo anchor(base_url(), 'Home');
-		echo ' | ';
-		echo anchor(base_url().'post/newPost/', 'New Post');		
-		echo ' | ';
-		echo anchor(base_url().'mantComments/maintenance', 'Maintenance Comments');
-		echo ' | <hr />';
-	}	
-	elseif (!$this->session->userdata('is_logged_in')){
-		echo '<hr />';
-		echo ' | ';
-		echo anchor(base_url(), 'Home');
-		echo ' | <hr />';
-	}
-?>
+<head>
+	<link rel="stylesheet" type="text/css" href=<?php echo base_url('assets/style.css'); ?>>
+	<meta charset="utf-8"/>
+	<body>
+		<header>
+			<nav class="menu">
+				<ul class="Sectionmenu">
+				<?php 
+					if ($this->session->userdata('is_logged_in')){
+						echo '<li>' . anchor(base_url()."user/logout/", "Logout").'</li>';
+						echo '<li>' . anchor(base_url(), 'Home').'</li>';
+						echo '<li>' . anchor(base_url().'post/newPost/', 'New Post').'</li>';		
+						echo '<li>' . anchor(base_url().'mantComments/maintenance', 'Mant').'</li>';
+					}	
+					elseif (!$this->session->userdata('is_logged_in')){
+						echo '<li>' . anchor(base_url(), 'Home').'</li>';
+					}
+				?>  
+				</ul>
+			</nav>	
+			
+		</header>
+		<div class='title' ><h1><b>Blog Student UTN</b></h1></div>
+	</header>
+	<footer>
+	</footer>
+</body>
+</html> 
+</head>
+
+
+
+</html>
