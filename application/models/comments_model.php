@@ -15,7 +15,7 @@ class Comments_model extends CI_Model {
 	//Se obtienen los comentarios deshabilitados, y son ordenados por fecha en orden desendente.
 	public function selectComments()
 	{	
-		$this->db->order_by("id_post","date", "desc"); 
+		$this->db->order_by("date", "desc"); 
 		$query = $this->db->get('comments');
 		return $query->result_array();		
 	}

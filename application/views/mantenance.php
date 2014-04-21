@@ -3,44 +3,52 @@
 <head>
 	<link rel="stylesheet" type="text/css" href=<?php echo base_url('assets/style.css'); ?>>
 	<meta charset="utf-8">	
+	<title>Maintenance</title>
 </head>
-<body class='mant'>
+<header>
 	<?php include('menu.php');?>
+</header>
+<body>
+	<div class='mant'>
+		
+		<?=form_open(base_url().'mantComments/getMessages/')?>
 
-	<?=form_open(base_url().'mantComments/getMessages/')?>
-	<form name="tabla" action="http://localhost/BlogCodeIgniter/mantComments/getMessages" method="POST">
-	<tbody>
-	<?php foreach ($comments as $comment):?>
-	<?php if($comment->status == 'disable'){ ?>
-		<div><b>Disable Comments</b><br><br>	
-		<br><div><b>Author: </b>	
-		<div><?=$comment->creator?></div>
-		<br><div><b>Status: </b>
-		<div><?=$comment->status?></div><br>
-		<br><div><b>Comment: </b>
-		<div><?=$comment->comment?></div><br>	
-		<b><th>Date: </th></b>
-		<?=$comment->date?></div><br>
-		<br><div><b>Edit</b><input type="radio" name="edit" value="<?=$comment->id?>"/>	
-		<div><?php echo anchor(base_url().'mantComments/delete/'.$comment->id,'Delete') ?></div>
-		<input type="submit" name="button" value="Accept" /></div><br><hr/><hr/>
-		</div>
-	<?php }elseif($comment->status == 'enable'){ ?>
-		<div><b>Enable Comment</b><br><br>	
-		<br><div><b>Author: </b>	
-		<div><?=$comment->creator?></div>
-		<br><div><b>Status: </b>
-		<div><?=$comment->status?></div><br>
-		<br><div><b>Comment: </b>
-		<div><?=$comment->comment?></div><br>	
-		<b><th>Date: </th></b>
-		<?=$comment->date?></div><br>
-		<br><div><b>Edit</b><input type="radio" name="edit" value="<?=$comment->id?>"/>	
-		<div><?php echo anchor(base_url().'mantComments/delete/'.$comment->id,'Delete') ?></div>
-		<input type="submit" name="button" value="Accept" /></div><br><hr/><hr/>
-		</div>
-	<?php }?>
-	<?php endforeach;?>
+		<form name="tabla" action="http://localhost/BlogCodeIgniter/mantComments/getMessages" method="POST">
+		<tbody>
+			<?php foreach ($comments as $comment):?>
+			<?php if($comment->status == 'disable'){ ?>
+			<div class='commentDis'>
+				<div class='disable'><b>Disable Comments</b></div>					
+				<div class='label'><b>Author: </b></div>	
+				<div class= 'inputAuthor'><b><?=$comment->creator?></b></div>
+				<div class='label'><b>Status: </b></div>
+				<div class='inputStatus'><b><?=$comment->status?></b></div>
+				<div class='label'><b>Comment: </b></div>
+				<div class='inputComment'><b><?=$comment->comment?></b></div>	
+				<div class='inputDate'><b><?=$comment->date?></b></div>
+				<div class='edit'><b>Edit </b><input type="radio" name="edit" value="<?=$comment->id?>"/></div>
+				<div class='delete'><?php echo anchor(base_url().'mantComments/delete/'.$comment->id,'Delete') ?></div>
+				<div class='acept'><input type="submit" name="button" value="Accept" /></div>
+			</div>
+					
+			<?php }elseif($comment->status == 'enable'){ ?>		
+			<div class='commentEna'>
+				<div class='enable'><b>Enable Comment</b></div>
+				<div class='label'><b>Author: </b></div>	
+				<div class= 'inputAuthor'><b><?=$comment->creator?></b></div>
+				<div class='label'><b>Status: </b></div>
+				<div class='inputStatus'><b><?=$comment->status?></b></div>
+				<div class='label'><b>Comment: </b></div>
+				<div class='inputComment'><b><?=$comment->comment?></b></div>	
+				<div class='inputDate'><b><?=$comment->date?></b></div>
+				<div class='edit'><b>Edit </b><input type="radio" name="edit" value="<?=$comment->id?>"/></div>	
+				<div class='delete'><?php echo anchor(base_url().'mantComments/delete/'.$comment->id,'Delete') ?></div>
+				<div class='acept'><input type="submit" name="button" value="Accept" /></div>
+			</div>		
+			<?php }?>
+		<?php endforeach;?>
+	</div>
+		
 	</tbody>
 	</table>	
 	</form>

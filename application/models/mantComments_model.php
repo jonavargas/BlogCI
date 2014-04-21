@@ -6,7 +6,7 @@
 	}
  
 	function getData() {
-		$this->db->order_by("id_post","date", "desc"); 
+		$this->db->order_by("date", "desc"); 
 		$comments = $this->db->get('comments');
 		return $comments->result(); 
 	}

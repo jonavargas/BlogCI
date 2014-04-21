@@ -25,12 +25,17 @@
 
 	<?php
 		if(!empty($comments)){
-			echo '<h3>Comments</h3>';
+			echo "<div class='commentPost'><h3>Comments</h3></div>";
 			foreach($comments as $comment)        	
 				if($comment->status == 'enable'){			
-					echo '<hr /> <h4> Author: '.$comment->creator.'</h4>'.
-					$comment->comment.'<br />'.
-					'<br />'.$comment->date . '<hr />';
+					echo 
+					"<div class='commentPostDiv'>" . 
+						"<div class='authorCommentPost'><b>Author: </b></div>" .					
+						"<div class= 'commentAuthor'><b>" . $comment->creator . "</b></div>" .
+						"<div class='comentCommentPost'><b>Comment: </b></div>" .
+						"<div class='commentComment'><b>" . $comment->comment . "</b></div>" .
+						"<div class='commentDate'><b>" . $comment->date . "</b></div>" .
+					'</div>';
 				}
 		}
 		else

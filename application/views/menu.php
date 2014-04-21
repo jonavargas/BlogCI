@@ -20,10 +20,9 @@
 					}
 				?>  
 				</ul>
-			</nav>	
-			
+			</nav>				
 		</header>
-		<div class='title' ><h1><b>Blog Student UTN</b></h1></div>
+		
 	</header>
 	<footer>
 	</footer>

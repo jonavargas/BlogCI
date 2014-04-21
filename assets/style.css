@@ -2,7 +2,7 @@ header, nav {
     display: block;
 }
 a {
-    color: #0099CC;
+    color: #004080;
     font-weight: bold;
     text-decoration: none;
 }
@@ -49,8 +49,8 @@ nav a {
     transition: all 0.5s ease-in;
 }
 nav a:hover {
-    background: #4DB8FF;
-    border: 0.1em dashed #0000FF;
+    background: #008000;
+    border: 0.1em dashed #00FF80;
     border-radius: 0 0.5em 0 0.5em;
     color: #FFF;
     -ms-transition: all 0.5s ease-out;
@@ -97,4 +97,158 @@ nav a:hover {
 	margin-top: -1%;
 	margin-left: 4%;
 	margin-bottom: -3%;
+}
+.mant{
+    margin-top: 6%;
+    margin-left: 6%;
+    margin-right: 6%;
+}
+
+.disable{
+    float: right;
+    margin-top: 2%;
+    margin-right: 3%;
+    color: #9F0000;
+}
+
+.enable{
+    color: #006A00;
+    float: right;
+    margin-top: 2%;
+    margin-right: 3%;
+}
+
+.commentEna{
+    margin-left: 32%;
+    background-color: #84FF84;
+    margin-top: 2%;
+    border-style: solid;
+    border-color: #008040;
+    border-radius: 2.8%;
+    width: 35%;
+    height: 30%;
+}
+
+.commentDis{
+    margin-left: 32%;
+    margin-top: 2%;
+    border-radius: 2.8%;
+    border-style: solid;
+    border-color: #A80000;
+    width: 35%;
+    height: 50%;
+    background-color: #FF5151;
+}
+
+.label{
+    margin-top: 2%;
+    margin-left: 3%;
+    color: #004080;
+}
+
+.inputAuthor{
+    margin-top: -4.8%;
+    margin-left: 17%;
+    color: #004000;
+}
+
+.inputStatus{
+    color: #004000;
+    margin-top: -4.8%;
+    margin-left: 16.5%; 
+}
+
+.inputComment{
+    color: #004000;
+    margin-top: 2%;
+    margin-left: 3.4%; 
+}
+
+.edit{
+    margin-top: 5%;
+    margin-left: 3%;
+    color: #004080;
+    margin-bottom: 2%;
+}
+
+.inputDate{
+    color: #004080;
+    margin-left: 47%;
+    margin-top: 6%;
+    margin-right: 2%;
+    float: right;
+}
+
+.delete{
+    color: 004080;
+    background-color: #E1E1E1;
+    border: 2px solid #CECECE;
+    margin-top: 7%;
+    width: 12%;
+    text-align: center;
+    border-color: #9F9F9F;
+    float: right;
+    margin-right: 68%;
+    margin-top: -8%;
+}
+
+.delete :hover{
+    color: #FF8000;
+}
+
+.acept{
+    margin-right: 50%;
+    float: right;
+    margin-top: -8%;
+}
+
+
+
+
+.commentPost{
+
+}
+
+.commentPostDiv{
+    margin-left: 26%;
+    margin-top: 2%;
+    border-radius: 2.8%;
+    border-style: solid;
+    border-color: #003366;
+    width: 45%;
+    height: 50%;
+    background-color: #95CAFF;
+}
+
+.authorCommentPost{
+    float: right;
+    margin-right: 14%;
+    margin-top: 2%;
+}
+
+.commentAuthor{
+    float: right;
+    margin-top: 2%;
+    margin-right: -21%;
+    color: #400080;
+}
+
+.comentCommentPost{
+    margin-top: 2%;
+    margin-left: 4%; 
+}
+
+.commentComment{
+    color: #400080;
+    margin-top: 1%;
+    margin-bottom: 8%;
+    margin-left: 16%; 
+}
+
+.commentDate{
+    color: #400080;
+    margin-left: 73%;
+    margin-top: -6%;
+    margin-right: 2%;
+    margin-bottom: 2%
 }

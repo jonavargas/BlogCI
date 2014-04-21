@@ -2,6 +2,7 @@
     <head>
         <title></title>
     </head>
+    <link rel="stylesheet" type="text/css" href=<?php echo base_url('assets/style.css'); ?>>
     <body>
         <head>
             <title></title>
