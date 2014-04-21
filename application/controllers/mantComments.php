@@ -8,13 +8,13 @@ class MantComments extends CI_Controller {
 	}
  
 	function maintenance() {
-		$comments = $this->mantComments_model->getData();
+		$comments = $this->mantComments_model->getData();		
 		$data['comments'] = $comments;
 		$this->load->view('mantenance', $data);
 	}
 
 	function getMessages() {
-		$data['comment'] = $this->mantComments_model->getMessage($_POST['edit']);
+		$data['comment'] = $this->mantComments_model->getMessage($_POST['edit']);		
 		$this->load->view('editComment', $data);
 	}
 
@@ -27,15 +27,8 @@ class MantComments extends CI_Controller {
 		$this->maintenance();
 	}
 
-
-	/////////////////////////////////////////
-
 	function delete($id) {
-		//obtenemos el nombre
-		//$nombre = $_POST['txtNombre'];
-		//cargamos el modelo y llamamos a la función baja(), pasándole el nombre del registro que queremos borrar.
 		$this->mantComments_model->deleteComments($id);
-		//mostramos la vista de nuevo.
 		$this->maintenance();
 	}
 

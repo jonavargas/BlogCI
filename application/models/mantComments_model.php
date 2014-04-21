@@ -27,8 +27,6 @@
 		$this->db->update('comments');
 	}
 
-	////////////////////////////////////
-	
 	function deleteComments ($id) {
 		$this->db->where('id', $id);
 		$this->db->delete('comments');

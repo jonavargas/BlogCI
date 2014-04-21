@@ -162,21 +162,16 @@ nav a:hover {
     color: #004000;
     margin-top: 2%;
     margin-left: 3.4%; 
-}
-
-.edit{
-    margin-top: 5%;
-    margin-left: 3%;
-    color: #004080;
-    margin-bottom: 2%;
+    margin-bottom: 10%;
 }
 
 .inputDate{
     color: #004080;
     margin-left: 47%;
-    margin-top: 6%;
+    margin-bottom: 6%;
     margin-right: 2%;
     float: right;
+    margin-top: -8%;
 }
 
 .delete{
@@ -187,27 +182,27 @@ nav a:hover {
     width: 12%;
     text-align: center;
     border-color: #9F9F9F;
-    float: right;
-    margin-right: 68%;
+    float: left: 0;;
+    margin-left: 18%;
     margin-top: -8%;
 }
 
 .delete :hover{
-    color: #FF8000;
+    color: #FF0000;
 }
 
-.acept{
+.edit{
     margin-right: 50%;
-    float: right;
-    margin-top: -8%;
+    margin-top: -6%;
+    margin-left: 5%; 
+    margin-bottom: 2%;
 }
 
-
-
-
+////////////////////////////////////////////////////////////////////////////////////////////
 .commentPost{
 
 }
+////////////////////////////////////////////////////////////////////////////////////////////
 
 .commentPostDiv{
     margin-left: 26%;

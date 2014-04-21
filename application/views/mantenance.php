@@ -26,9 +26,9 @@
 				<div class='label'><b>Comment: </b></div>
 				<div class='inputComment'><b><?=$comment->comment?></b></div>	
 				<div class='inputDate'><b><?=$comment->date?></b></div>
-				<div class='edit'><b>Edit </b><input type="radio" name="edit" value="<?=$comment->id?>"/></div>
+				<div><input type="hidden" name="edit" value="<?=$comment->id?>"/></div>
 				<div class='delete'><?php echo anchor(base_url().'mantComments/delete/'.$comment->id,'Delete') ?></div>
-				<div class='acept'><input type="submit" name="button" value="Accept" /></div>
+				<div class='edit'><input type="submit" name="button" value="Edit" /></div>
 			</div>
 					
 			<?php }elseif($comment->status == 'enable'){ ?>		
@@ -41,9 +41,9 @@
 				<div class='label'><b>Comment: </b></div>
 				<div class='inputComment'><b><?=$comment->comment?></b></div>	
 				<div class='inputDate'><b><?=$comment->date?></b></div>
-				<div class='edit'><b>Edit </b><input type="radio" name="edit" value="<?=$comment->id?>"/></div>	
+				<div><input type="hidden" name="edit" value="<?=$comment->id?>"/></div>	
 				<div class='delete'><?php echo anchor(base_url().'mantComments/delete/'.$comment->id,'Delete') ?></div>
-				<div class='acept'><input type="submit" name="button" value="Accept" /></div>
+				<div class='edit'><input type="submit" name="button" value="Edit" /></div>
 			</div>		
 			<?php }?>
 		<?php endforeach;?>

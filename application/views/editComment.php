@@ -25,7 +25,7 @@
                     </tr>
                 </table>
                 <?php echo form_hidden('idComment', $comment[0]->id) ?>
-                <?php echo form_submit('','Accept') ?>
+                <?php echo form_submit('','End') ?>
             </form>
     </body>
     </body>
