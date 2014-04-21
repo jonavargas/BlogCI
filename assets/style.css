@@ -107,7 +107,7 @@ nav a:hover {
 .disable{
     float: right;
     margin-top: 2%;
-    margin-right: 3%;
+    margin-right: 3.4%;
     color: #9F0000;
 }
 
@@ -115,7 +115,7 @@ nav a:hover {
     color: #006A00;
     float: right;
     margin-top: 2%;
-    margin-right: 3%;
+    margin-right: 3.4%;
 }
 
 .commentEna{
@@ -169,9 +169,9 @@ nav a:hover {
     color: #004080;
     margin-left: 47%;
     margin-bottom: 6%;
-    margin-right: 2%;
+    margin-right: 2.4%;
     float: right;
-    margin-top: -8%;
+    margin-top: -6%;
 }
 
 .delete{
@@ -183,8 +183,8 @@ nav a:hover {
     text-align: center;
     border-color: #9F9F9F;
     float: left: 0;;
-    margin-left: 18%;
-    margin-top: -8%;
+    margin-left: 22%;
+    margin-top: 8%;
 }
 
 .delete :hover{
@@ -194,15 +194,16 @@ nav a:hover {
 .edit{
     margin-right: 50%;
     margin-top: -6%;
-    margin-left: 5%; 
+    margin-left: 9%; 
     margin-bottom: 2%;
 }
 
-////////////////////////////////////////////////////////////////////////////////////////////
-.commentPost{
-
+.radio{
+    margin-left: 3%;
+    margin-top: -5%;
+    margin-bottom: -15%;
 }
-////////////////////////////////////////////////////////////////////////////////////////////
+
 
 .commentPostDiv{
     margin-left: 26%;
@@ -210,40 +211,42 @@ nav a:hover {
     border-radius: 2.8%;
     border-style: solid;
     border-color: #003366;
-    width: 45%;
+    width: 40%;
     height: 50%;
     background-color: #95CAFF;
 }
 
 .authorCommentPost{
+    color: #004000;
     float: right;
-    margin-right: 14%;
+    margin-right: 2%;
     margin-top: 2%;
 }
 
 .commentAuthor{
     float: right;
-    margin-top: 2%;
-    margin-right: -21%;
-    color: #400080;
+    margin-top: 6%;
+    margin-right: -6%;
+    color: #007700;
 }
 
 .comentCommentPost{
+    color: #004000;
     margin-top: 2%;
     margin-left: 4%; 
 }
 
 .commentComment{
-    color: #400080;
+    color: #007700;
     margin-top: 1%;
     margin-bottom: 8%;
     margin-left: 16%; 
 }
 
 .commentDate{
-    color: #400080;
+    color: #007700;
     margin-left: 73%;
-    margin-top: -6%;
-    margin-right: 2%;
+    margin-top: -2%;
+    margin-left: 73%;
     margin-bottom: 2%
 }

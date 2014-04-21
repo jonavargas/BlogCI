@@ -26,7 +26,7 @@
 				<div class='label'><b>Comment: </b></div>
 				<div class='inputComment'><b><?=$comment->comment?></b></div>	
 				<div class='inputDate'><b><?=$comment->date?></b></div>
-				<div><input type="hidden" name="edit" value="<?=$comment->id?>"/></div>
+				<div class='radio'><input type="radio" name="edit" value="<?=$comment->id?>"/></div>
 				<div class='delete'><?php echo anchor(base_url().'mantComments/delete/'.$comment->id,'Delete') ?></div>
 				<div class='edit'><input type="submit" name="button" value="Edit" /></div>
 			</div>
@@ -41,7 +41,7 @@
 				<div class='label'><b>Comment: </b></div>
 				<div class='inputComment'><b><?=$comment->comment?></b></div>	
 				<div class='inputDate'><b><?=$comment->date?></b></div>
-				<div><input type="hidden" name="edit" value="<?=$comment->id?>"/></div>	
+				<div class='radio'><input type="radio" name="edit" value="<?=$comment->id?>"/></div>	
 				<div class='delete'><?php echo anchor(base_url().'mantComments/delete/'.$comment->id,'Delete') ?></div>
 				<div class='edit'><input type="submit" name="button" value="Edit" /></div>
 			</div>		
