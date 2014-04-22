@@ -16,17 +16,15 @@
 		<form name="tabla" action="http://localhost/BlogCodeIgniter/mantPost/getPost" method="POST">
 		<tbody>
 			<?php foreach ($post as $data):?>
-			<div>
-				<div class='0labelPost'><b>Author: </b></div>	
-				<div class='0inputAuthor'><b><?=$data->creator?></b></div>
-				<div class='0labelPost'><b>Title: </b></div>
-				<div class='0inputStatus'><b><?=$data->title?></b></div>
-				<div class='0labelPost'><b>Comment: </b></div>
-				<div class='0inputComment'><b><?=$data->content?></b></div>	
-				<div class='0inputDate'><b><?=$data->date?></b></div>
-				<div><input type="radio" name="edit" value= '<?=$data->id?>'/></div>
-				<div class='0delete'><?php echo anchor(base_url().'mantPost/delete/'. $data->id,'Delete') ?></div>
-				<div class='0acept'><input type="submit" name="button" value="Edit" /></div>
+			<div class='editPost'>
+				<div class='authorComPost2'><b>Author: </b></div>	
+				<div class='creatorComPost2'><b><?=$data->creator?></b></div>
+				<div class='titleComPost2'><b><?=$data->title?></b></div>
+				<div class='contentComPost2'><b><?=$data->content?></b></div>	
+				<div class='dateComPost2'><b><?=$data->date?></b></div>
+				<div class='radio2'><input type="radio" name="edit" value= '<?=$data->id?>'/></div>
+				<div class='delete2'><?php echo anchor(base_url().'mantPost/delete/'. $data->id,'Delete') ?></div>
+				<div class='acept2'><input type="submit" name="button" value="Edit" /></div>
 			</div>	
 		<?php endforeach;?>
 	</div>

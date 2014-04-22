@@ -5,23 +5,9 @@
 	<meta charset="utf-8">
 	<title>Home</title>	
 </head>
-<body id='back'>
+<header>
 	<?php include('menu.php');?>
-
-		<div class='divMainPost'>
-			<?php if (!empty($posts)) : ?>
-				<?php foreach($posts as $post) : ?>
-
-					<section class='divPost'>
-						<div class='titlePost'><h2><?=anchor(base_url().'post/viewPost/'.$post->id,$post->title)?></h2></div>
-						<div class='contentPost'><b><?=$string = $post->content?></b></div>								
-						<div class='datePost'><b><?=$post->date?></b></div>
-					</section>
-				<?php endforeach; ?>
-			<?php else : ?>
-				<h1>No Post</h1>
-			<?php endif; ?>
-		</div>
+	</div>
 			<?php foreach ($data as $info):?>
 		<div class='title'><?php echo $info->title ?></div>			
 		<div class='biography'>			
@@ -45,6 +31,20 @@
 				endforeach;
 			?>
 		</div>
-		
+</header>
+<body id='back'>	
+		<div class='divMainPost'>
+			<?php if (!empty($posts)) : ?>
+				<?php foreach($posts as $post) : ?>
+
+					<section class='divPost'>
+						<div class='titlePost'><h2><?=anchor(base_url().'post/viewPost/'.$post->id,$post->title)?></h2></div>
+						<div class='contentPost'><b><?=$string = $post->content?></b></div>								
+						<div class='datePost'><b><?=$post->date?></b></div>
+					</section>
+				<?php endforeach; ?>
+			<?php else : ?>
+				<h1>No Post</h1>
+			<?php endif; ?>			
 </body>
 </html>

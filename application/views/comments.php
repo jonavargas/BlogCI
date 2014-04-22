@@ -8,19 +8,24 @@
 <body>
 	<?php include('menu.php');?>
 
-	<h2><?=$post->title?></h2>
-	<p><?=$post->content?></p>
-	Author: <?=$post->creator?><br />
-	Posted: <?=$post->date?><br />
+	<div class='divComPost'>
+		<div class='titleComPost'><b><h2><?=$post->title?></h2></b></div>
+		<div class='contentComPost'><b><?=$post->content?></b></div>
+		<div class='authorComPost'><b>Author:</b></div> 
+		<div class='creatorComPost'><b><?=$post->creator?></b></div>
+		<div class='postedComPost'><b>Posted:</b></div> 
+		<div class='dateComPost'><b><?=$post->date?></b></div>
+	</div>
 		
 	<?=form_open(base_url().'comments/comment/')?>
-	<br />Author: <?=form_input('creator')?><br />
-	<br />
-	Your comment: 
-	
-	<?=form_hidden('id_post', $this->uri->segment(3))?>
-	<?=form_textarea('comment')?>
-	<?=form_submit('submit','Comment')?>
+
+	<div class='divCommentPost'>
+		<div class='authorCommPost'><b/>Author: <?=form_input('creator')?><b/></div>
+		<div class='yourCommentPost'><b>Your comment: </b></div>
+		<?=form_hidden('id_post', $this->uri->segment(3))?>
+		<div class='comCommentPost'><b><?=form_textarea('comment')?></b></div>
+		<div class='bntCommentPost'><b><?=form_submit('submit','Comment')?></b></div>
+	</div>
 	<?=form_close()?>
 
 	<?php
@@ -39,7 +44,7 @@
 				}
 		}
 		else
-			echo '<h3>No Comments!</h3>';
+			echo '<div class="noComments"><h3>No Comments!</h3></div>';
 	?>
 </body>
 </html>
