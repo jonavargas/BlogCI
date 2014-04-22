@@ -256,14 +256,21 @@ nav a:hover {
     color: #008000;
 }
 
+.divMainPost{
+    border: 1px solid #00FFFF;
+    width: 45%;
+    margin-top: 8%;
+    margin-left: 4%;
+}
+
 .title{
     font-family: Buxton Sketch;
     font-size: 420%;
     color: #006600;
-    text-shadow: 3px 8px 8px #1B1B1B;
-    margin-top: -145%;
-    margin-left: 32%;
-    float: left;
+    text-shadow: 3px 8px 8px #1B1B1B;    
+    position: absolute;
+    margin-top: -230%;
+    margin-left: 35%;    
 }
 
 .title:hover{
@@ -279,8 +286,8 @@ nav a:hover {
 .biography{
     width: 30%;
     font-family: Arial;    
-    margin-left: 67%;
-    margin-top: -144%;
+    margin-left: 68%;
+    border: 1px solid #FF00FF;
 }
 
 .picture{
@@ -351,7 +358,7 @@ nav a:hover {
     border-radius: 2.8%;
     border-style: solid;
     border-color: #003366;
-    width: 40%;
+    width: 38%;
     height: 50%;
     background-color: #95CAFF;
 }
@@ -371,11 +378,88 @@ nav a:hover {
     margin-top: -5%;
 }
 .inputCommentEd{
-    margin-top: 2%;
-    margin-left: 15%;
+    margin-top: 0.1%;
+    margin-left: 6%;
+    margin-bottom: -6%;
+    position: absolute;
 }
 
 .btnEdit{
-    margin-top:  -4%;
-    margin-left: 85%;
+    margin-top:  24%;
+    margin-left: 87%;
+    margin-bottom: 4%;
+}
+
+.divPost{
+    border: 2px solid #008000;
+    width: 75%;
+    margin-left: 10%;
+    margin-top: 13%;
+    border-radius: 5% 5% 5% 5%;
+    margin-bottom: -10%;
+    background-color: #89A6DA;
+}
+
+.titlePost{
+    font-family: Andalus;
+    font-size: 180%;
+    color: #007EFD;
+    text-shadow: 3px 8px 8px #1B1B1B;
+    text-align: center;
+    margin-top: -6%;
+}
+
+.titlePost:hover{
+    color: #FFFFFF;
+    text-shadow: 6px 10px 8px #1B1B1B;
+    -ms-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.contentPost{
+    margin-left: 8%;
+    font-family: Arial;
+    text-align: justify;
+    color: #006291;
+}
+
+.datePost{
+    margin-left: 75%;
+    margin-bottom: 2%;
+    margin-top: 4%;
+    color: #008000;
+}
+
+.newPost{
+    border: 2px solid #008000;
+    width: 37%;
+    margin-top: 9%;
+    margin-left: 28%;
+    border-radius: 5% 5% 5% 5%;
+    background-color: #89A6DA;
+}
+
+.titleNewPost{
+    margin-top: 3%;
+    margin-left: 27%;
+    color: #004000;
+}
+
+.lblContentNewPost{
+    margin-top: 4%;
+    margin-left: 5%;
+    color: #004000;
+}
+
+.contentNewPost{
+    margin-left: 19%;
+}
+
+.btnNewPost{
+    margin-left: 39%;
+    margin-top: 3%;
+    margin-bottom: 3%;
 }
