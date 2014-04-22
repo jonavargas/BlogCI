@@ -20,7 +20,7 @@
 	
 	<?=form_hidden('id_post', $this->uri->segment(3))?>
 	<?=form_textarea('comment')?>
-	<?=form_submit('submit','Add Comment')?>
+	<?=form_submit('submit','Comment')?>
 	<?=form_close()?>
 
 	<?php

@@ -3,7 +3,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href=<?php echo base_url('assets/style.css'); ?>>
 	<meta charset="utf-8">	
-	<title>Maintenance</title>
+	<title>Edit Comments</title>
 </head>
 <header>
 	<?php include('menu.php');?>
@@ -17,7 +17,6 @@
 			<div id="pag">
 	
 		        <?php if($comments){ ?>
-
 
 					<?php foreach ($comments as $comment):?>
 					<?php if($comment->status == 'disable'){ ?>

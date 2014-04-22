@@ -3,7 +3,8 @@
 class Post_model extends CI_Model {
 
 	public function getPosts(){
-		$this->db->order_by('date DESC');
+		$this->db->order_by("date", "desc"); 
+
 		return $this->db->get('post')->result();
 	}
 

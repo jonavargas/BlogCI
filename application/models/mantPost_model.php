@@ -12,6 +12,7 @@
 	}
 
 	function getPost($id) {
+		$this->db->order_by("date", "desc"); 
 		$this->db->select('id, creator, title, content');
 		$this->db->from('post');
 		$this->db->where('id = ' . $id);

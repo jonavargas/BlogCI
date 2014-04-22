@@ -1,12 +1,9 @@
 <html>
     <head>
-        <title></title>
+        <title>Comment</title>
     </head>
     <link rel="stylesheet" type="text/css" href=<?php echo base_url('assets/style.css'); ?>>
     <body>
-        <head>
-            <title></title>
-        </head>
         <body>
             <?=form_open(base_url() . 'mantPost/edit/')?>
             <form name="edit" action="http://localhost/BlogCodeIgniter/mantPost/edit" method="POST">

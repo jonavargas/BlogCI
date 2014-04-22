@@ -13,8 +13,8 @@
 						echo '<li>' . anchor(base_url()."user/logout/", "Logout").'</li>';
 						echo '<li>' . anchor(base_url(), 'Home').'</li>';
 						echo '<li>' . anchor(base_url().'post/newPost/', 'New Post').'</li>';		
-						echo '<li>' . anchor(base_url().'mantComments/maintenance', 'Mant Commets').'</li>';
-						echo '<li>' . anchor(base_url().'mantPost/maintenance', 'Mant Post').'</li>';
+						echo '<li>' . anchor(base_url().'mantComments/maintenance', 'Edit Commets').'</li>';
+						echo '<li>' . anchor(base_url().'mantPost/maintenance', 'Edit Posts').'</li>';
 					}	
 					elseif (!$this->session->userdata('is_logged_in')){
 						echo '<li>' . anchor(base_url(), 'Home').'</li>';

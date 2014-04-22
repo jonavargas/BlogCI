@@ -42,6 +42,5 @@ $route['default_controller'] = "post";
 $route['404_override'] = '';
 $route['mantComments/maintenance/(:num)'] = 'mantComments';//cuando no sea la primera página
 $route['mantComments/maintenance'] = 'mantComments';//cuando sea la primera página
-
 /* End of file routes.php */
 /* Location: ./application/config/routes.php */

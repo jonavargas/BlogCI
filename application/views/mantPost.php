@@ -3,7 +3,7 @@
 <head>
 	<link rel="stylesheet" type="text/css" href=<?php echo base_url('assets/style.css'); ?>>
 	<meta charset="utf-8">	
-	<title>Maintenance</title>
+	<title>Edit Posts</title>
 </head>
 <header>
 	<?php include('menu.php');?>
@@ -24,7 +24,7 @@
 				<div class='0labelPost'><b>Comment: </b></div>
 				<div class='0inputComment'><b><?=$data->content?></b></div>	
 				<div class='0inputDate'><b><?=$data->date?></b></div>
-				<div><input type="hidden" name="edit" value= '<?=$data->id?>'/></div>
+				<div><input type="radio" name="edit" value= '<?=$data->id?>'/></div>
 				<div class='0delete'><?php echo anchor(base_url().'mantPost/delete/'. $data->id,'Delete') ?></div>
 				<div class='0acept'><input type="submit" name="button" value="Edit" /></div>
 			</div>	

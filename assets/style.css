@@ -7,7 +7,7 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: #00F400;
+    color: #930000;
 }
 body {
     background: rgb(152, 190, 222);
@@ -60,13 +60,6 @@ nav a:hover {
     transition: all 0.5s ease-out;
 }
 
-.title{
-	font-size: 150%;
-	color: #004000;
-	text-shadow: 0px 3px 8px #2a2a2a;
-	margin-top: -3%;
-	margin-left: 36%;
-}
 .login{
 	color: #004200;
 	width: 22%;
@@ -261,4 +254,128 @@ nav a:hover {
     margin-left: 43%;
     font-family: Arial;
     color: #008000;
+}
+
+.title{
+    font-family: Buxton Sketch;
+    font-size: 420%;
+    color: #006600;
+    text-shadow: 3px 8px 8px #1B1B1B;
+    margin-top: -145%;
+    margin-left: 32%;
+    float: left;
+}
+
+.title:hover{
+    color: #800000;
+    text-shadow: 6px 10px 8px #1B1B1B;
+    -ms-transition: all 0.5s ease-out;
+    -moz-transition: all 0.5s ease-out;
+    -o-transition: all 0.5s ease-out;
+    -webkit-transition: all 0.5s ease-out;
+    transition: all 0.5s ease-out;
+}
+
+.biography{
+    width: 30%;
+    font-family: Arial;    
+    margin-left: 67%;
+    margin-top: -144%;
+}
+
+.picture{
+    margin-left: 32%;
+    margin-bottom: 5%;
+    width: 40%;
+    height: 30%;
+    border-radius: 5%;
+}
+
+.info{
+    margin-top: 7%;
+    margin-left: 19.8%;
+    margin-bottom: 3%;
+    color: #008000;
+}
+
+.phoneText{
+    margin-left: 36%;
+    margin-right: 6%;
+    margin-top: -7.3%;
+    text-align: justify;
+}
+
+.emailText{
+    margin-left: 36%;
+    margin-right: 6%;
+    margin-top: -7.3%;
+    margin-bottom: 10%;
+    text-align: justify;
+}
+
+.bioText{
+    margin-left: 20%;
+    margin-right: 6%;
+    text-align: justify;
+}
+
+.social{
+    display: inline;
+    width: 30%;
+    height: 20%;  
+    margin-left: 28%;
+    text-align: right;
+}
+
+.social img { 
+    margin: 4px; 
+    border: 5px solid #006600; 
+    box-shadow: 4px 4px 4px rgba(0,0,0,0.2); 
+    -webkit-box-shadow: 4px 4px 4px rgba(0,0,0,0.2); 
+    -moz-box-shadow: 4px 4px 4px rgba(0,0,0,0.2); 
+    -webkit-transition: all 0.5s ease-out; 
+    -moz-transition: all 0.5s ease; 
+    -o-transition: all 0.5s ease; 
+} 
+
+.social img:hover { 
+    border: 5px solid #800000;
+    -webkit-transform: rotate(-7deg); 
+    -moz-transform: rotate(-7deg); 
+    -o-transform: rotate(-7deg); 
+} 
+
+.editC{
+    margin-left: 29%;
+    margin-top: 11%;
+    border-radius: 2.8%;
+    border-style: solid;
+    border-color: #003366;
+    width: 40%;
+    height: 50%;
+    background-color: #95CAFF;
+}
+
+.labelEd{
+    margin-top: 4%;
+    margin-left: 4%;
+    color: #006200;
+}
+
+.inputAuthorEd{
+    margin-left: 15%;
+    margin-top: -5%;    
+}
+.inputStatusEd{
+    margin-left: 15%;
+    margin-top: -5%;
+}
+.inputCommentEd{
+    margin-top: 2%;
+    margin-left: 15%;
+}
+
+.btnEdit{
+    margin-top:  -4%;
+    margin-left: 85%;
 }
