@@ -33,14 +33,14 @@ class Comments extends CI_Controller {
 			$this->email->to('jonavargas2012@gmail.com');
 			$this->email->subject('New comment added!');
 			$this->email->message('<h4>It added a new comment new comment:</h4>' .
-		    '<strong>Author: </strong>'. $comment[creator] .'<br />'. '<br />'.'<br />'.
-			'<strong>Comment: </strong>' . $comment[comment] .'<br />'.'<br />'.
-			'<strong>Date: </strong>'.$comment[date] . '<hr />');
+		    '<strong>Author: </strong>'. $comment['creator'] .'<br />'. '<br />'.'<br />'.
+			'<strong>Comment: </strong>' . $comment['comment'] .'<br />'.'<br />'.
+			'<strong>Date: </strong>'.$comment['date'] . '<hr />');
 
 			if($this->email->send()){
 			}
 			else{
-				show_error($this->email->print_debugger());
+				//show_error($this->email->print_debugger());
 			}
 		}		
 
