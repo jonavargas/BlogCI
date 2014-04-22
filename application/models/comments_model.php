@@ -9,6 +9,7 @@ class Comments_model extends CI_Model {
 	//Se optinen los comentarios que sean pertenecientes al id del post elegido.
 	public function getComments($id){
 		$this->db->where('id_post', $id);
+		$this->db->order_by("date", "desc"); 
 		return $this->db->get('comments')->result();
 	}
 

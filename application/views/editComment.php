@@ -9,7 +9,7 @@
         </head>
         <body>
             <?=form_open(base_url().'mantComments/edit/')?>
-            <form name="edit" action="http://localhost/BlogCodeIgniter/mantComments/edit" method="POST">
+            <form name="edit" action="http://localhost/BlogCodeIgniter/mantComments/edit/" method="POST">
                 <table>
                     <tr>
                         <td>Author: </td>
@@ -25,7 +25,7 @@
                     </tr>
                 </table>
                 <?php echo form_hidden('idComment', $comment[0]->id) ?>
-                <?php echo form_submit('','End') ?>
+                <?php echo form_submit('','End') ?>                
             </form>
     </body>
     </body>

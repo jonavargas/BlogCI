@@ -7,7 +7,7 @@ a {
     text-decoration: none;
 }
 a:hover {
-    color: #FF6600;
+    color: #00F400;
 }
 body {
     background: rgb(152, 190, 222);
@@ -86,6 +86,12 @@ nav a:hover {
 .log{
 	margin-left: 14px;
 	margin-bottom: 8px;
+}
+
+.error{
+    color: #E60000;
+    margin-left: 11%;
+    margin-top: 2%;
 }
 
 .but{
@@ -175,14 +181,13 @@ nav a:hover {
 }
 
 .delete{
-    color: 004080;
+    color: #004080;
     background-color: #E1E1E1;
     border: 2px solid #CECECE;
     margin-top: 7%;
     width: 12%;
     text-align: center;
     border-color: #9F9F9F;
-    float: left: 0;;
     margin-left: 22%;
     margin-top: 8%;
 }
@@ -240,13 +245,20 @@ nav a:hover {
     color: #007700;
     margin-top: 1%;
     margin-bottom: 8%;
-    margin-left: 16%; 
+    margin-left: 16%;     
 }
 
 .commentDate{
     color: #007700;
     margin-left: 73%;
     margin-top: -2%;
-    margin-left: 73%;
-    margin-bottom: 2%
+    margin-bottom: 2%;
+}
+
+.pagi{
+    margin-top: 4%;
+    margin-bottom: 2%;
+    margin-left: 43%;
+    font-family: Arial;
+    color: #008000;
 }
